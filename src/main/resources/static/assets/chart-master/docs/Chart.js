@@ -501,7 +501,7 @@ var Chart = function (context) {
                     lowerValue = data[i].value;
                 }
             }
-            ;
+
 
             var maxSteps = Math.floor((scaleHeight / (labelHeight * 0.66)));
             var minSteps = Math.floor((scaleHeight / labelHeight * 0.5));
@@ -676,7 +676,7 @@ var Chart = function (context) {
 
             }
             ctx.restore();
-        };
+        }
 
         function calculateDrawingSizes() {
             maxSize = (Min([width, height]) / 2);
@@ -698,7 +698,7 @@ var Chart = function (context) {
             scaleHeight = maxSize;
             //If the label height is less than 5, set it to 5 so we don't have lines on top of each other.
             labelHeight = Default(labelHeight, 5);
-        };
+        }
 
         function getValueBounds() {
             var upperValue = Number.MIN_VALUE;
@@ -1036,14 +1036,14 @@ var Chart = function (context) {
                     if (data.datasets[i].data[j] > upperValue) {
                         upperValue = data.datasets[i].data[j]
                     }
-                    ;
+
                     if (data.datasets[i].data[j] < lowerValue) {
                         lowerValue = data.datasets[i].data[j]
                     }
-                    ;
+
                 }
             }
-            ;
+
 
             var maxSteps = Math.floor((scaleHeight / (labelHeight * 0.66)));
             var minSteps = Math.floor((scaleHeight / labelHeight * 0.5));
@@ -1249,14 +1249,14 @@ var Chart = function (context) {
                     if (data.datasets[i].data[j] > upperValue) {
                         upperValue = data.datasets[i].data[j]
                     }
-                    ;
+
                     if (data.datasets[i].data[j] < lowerValue) {
                         lowerValue = data.datasets[i].data[j]
                     }
-                    ;
+
                 }
             }
-            ;
+
 
             var maxSteps = Math.floor((scaleHeight / (labelHeight * 0.66)));
             var minSteps = Math.floor((scaleHeight / labelHeight * 0.5));
@@ -1359,7 +1359,7 @@ var Chart = function (context) {
                 numberOfSteps = Math.round(graphRange / stepValue);
             }
         }
-        ;
+
 
 
         //Create an array of all the labels by interpolating the string.
@@ -1391,12 +1391,12 @@ var Chart = function (context) {
     //Max value from array
     function Max(array) {
         return Math.max.apply(Math, array);
-    };
+    }
 
     //Min value from array
     function Min(array) {
         return Math.min.apply(Math, array);
-    };
+    }
 
     //Default if undefined
     function Default(userDeclared, valueIfFalse) {
@@ -1405,7 +1405,7 @@ var Chart = function (context) {
         } else {
             return userDeclared;
         }
-    };
+    }
 
     //Is a number function
     function isNumber(n) {
@@ -1479,7 +1479,7 @@ var Chart = function (context) {
 
         // Provide some basic currying to the user
         return data ? fn(data) : fn;
-    };
+    }
 }
 
 

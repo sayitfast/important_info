@@ -3041,7 +3041,7 @@ var sinon = (function () {
             for (var index = 0; index < collection.length; index++) {
                 if (callback(collection[index]) === true) return true;
             }
-            ;
+
             return false;
         }
 
@@ -3061,7 +3061,7 @@ var sinon = (function () {
                 case 5:
                     return obj[method](args[0], args[1], args[2], args[3], args[4]);
             }
-            ;
+
         };
 
         FakeXMLHttpRequest.filters = [];
@@ -4105,7 +4105,7 @@ var sinon = (function () {
         function exposedName(prefix, prop) {
             return !prefix || /^fail/.test(prop) ? prop :
                 prefix + prop.slice(0, 1).toUpperCase() + prop.slice(1);
-        };
+        }
 
         assert = {
             failException: "AssertError",

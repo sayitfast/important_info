@@ -1514,7 +1514,7 @@
             }
         }
         return res;
-    };
+    }
 
 
     var dateFormatters = {

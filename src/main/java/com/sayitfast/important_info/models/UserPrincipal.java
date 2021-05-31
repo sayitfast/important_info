@@ -9,7 +9,7 @@ import java.util.Collections;
 
 public class UserPrincipal implements UserDetails {
 
-    private App_User mAppUser;
+    private final App_User mAppUser;
 
 
     public UserPrincipal(App_User appUser) {

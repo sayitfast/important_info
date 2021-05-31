@@ -33,4 +33,7 @@ public class CountryService {
         countryRepository.deleteById(id);
     }
 
+    public long getCountriesCount() {
+        return countryRepository.count();
+    }
 }

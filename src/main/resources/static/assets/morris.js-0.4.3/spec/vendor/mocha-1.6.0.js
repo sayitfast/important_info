@@ -84,7 +84,7 @@
          */
 
         function EventEmitter() {
-        };
+        }
 
         /**
          * Adds a listener.
@@ -122,7 +122,7 @@
             function on() {
                 self.removeListener(name, on);
                 fn.apply(this, arguments);
-            };
+            }
 
             on.listener = fn;
             this.on(name, on);
@@ -2239,7 +2239,7 @@
             }
 
             return ret;
-        };
+        }
 
         /**
          * Map jscoverage data for a single source file

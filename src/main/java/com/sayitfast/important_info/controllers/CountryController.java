@@ -20,6 +20,7 @@ public class CountryController {
     public String getCountries(Model model) {
         List<Country> countryList = countryService.getCountries();
         model.addAttribute("countries", countryList);
+        model.addAttribute("countriesCount", countryList.size());
         return "country";
     }
 
@@ -46,5 +47,4 @@ public class CountryController {
         countryService.delete(id);
         return "redirect:/countries";
     }
-
 }

@@ -20,14 +20,14 @@ var Script = function () {
                 l.className = (safari && inp.checked == true || inp.checked) ? 'label_check c_on' : 'label_check c_off';
                 l.onclick = check_it;
             }
-            ;
+
             if (l.className == 'label_radio') {
                 l.className = (safari && inp.checked == true || inp.checked) ? 'label_radio r_on' : 'label_radio r_off';
                 l.onclick = turn_radio;
             }
-            ;
+
         }
-        ;
+
     };
     var check_it = function () {
         var inp = gebtn(this, 'input')[0];
@@ -38,7 +38,7 @@ var Script = function () {
             this.className = 'label_check c_off';
             if (safari) inp.click();
         }
-        ;
+
     };
     var turn_radio = function () {
         var inp = gebtn(this, 'input')[0];
@@ -49,14 +49,14 @@ var Script = function () {
                 if (l.className.indexOf('label_radio') == -1) continue;
                 l.className = 'label_radio r_off';
             }
-            ;
+
             this.className = 'label_radio r_on';
             if (safari) inp.click();
         } else {
             this.className = 'label_radio r_off';
             if (safari) inp.click();
         }
-        ;
+
     };
 
 
