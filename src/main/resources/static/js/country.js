@@ -3,7 +3,7 @@ $('document').ready(function () {
     $('table #editButton').on('click', function (event) {
         event.preventDefault();
 
-        var href = $(this).attr('href');
+        var href = $(this).attr('href');  // == /countries/findbyId/?id=1  url and id of the clicked button
 
         $.get(href, function (country, status) {
             $('#idEdit').val(country.id);
@@ -24,6 +24,22 @@ $('document').ready(function () {
         $('#confirmDeleteButton').attr('href', href);
 
         $('#deleteModal').modal();
+    });
+
+    $('.table #detailsButton').on('click', function (event) {
+        event.preventDefault();
+        var href = $(this).attr('href');
+        $.get(href, function (country, status) {
+            $('#idDetails').val(country.id);
+            $('#descriptionDetails').val(country.description);
+            $('#codeDetails').val(country.code);
+            $('#capitalDetails').val(country.capital);
+            $('#continentDetails').val(country.continent);
+            $('#nationalityDetails').val(country.nationality);
+            $('#lastModifiedByDetails').val(country.lastModifiedBy);
+            $('#lastModifiedDateDetails').val(country.lastModifiedDate.substr(0, 19).replace("T", " "));
+        });
+        $('#detailsModal').modal();
     });
 
 });

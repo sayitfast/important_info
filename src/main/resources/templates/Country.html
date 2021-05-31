@@ -59,7 +59,9 @@
 									<a class="btn btn-primary" id="editButton"
 									   th:href="@{/countries/findById/(id=${country.id})}"><i
 											class="icon_pencil-edit"></i></a>
-									<a class="btn btn-success" id="detailsButton"><i class="icon_document_alt"></i></a>
+									<a class="btn btn-success" id="detailsButton"
+									   th:href="@{/countries/findById/(id=${country.id})}"><i
+											class="icon_pencil-edit"></i></a>
 									<a class="btn btn-danger" id="deleteButton"
 									   th:href="@{/countries/delete/(id=${country.id})}"><i class="icon_close_alt2"></i></a>
 								</div>
@@ -82,12 +84,12 @@
 <!-- container section end -->
 
 <!--modal windows-->
-<div aria-hidden="true" aria-labelledby="addModalLabel" class="modal fade" id="addModal" role="dialog"
+<div aria-hidden="true" aria-labelledby="addModal" class="modal fade" id="addModal" role="dialog"
      tabindex="-1">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">New Country</h5>
+				<h5 class="modal-title" id="addModalTitle">New Country</h5>
 				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -116,10 +118,9 @@
 					</div>
 
 					<div class="form-group">
-						<label class="col-form-label" for="continent-name">Nationality:</label>
-						<input class="form-control" id="nationality-name" name="continent" type="text">
+						<label class="col-form-label" for="nationality-name">Nationality:</label>
+						<input class="form-control" id="nationality-name" name="nationality" type="text">
 					</div>
-
 
 					<div class="form-group">
 						<button class="btn btn-primary" type="submit">Submit</button>
@@ -133,12 +134,12 @@
 	</div>
 </div>
 
-<div aria-hidden="true" aria-labelledby="editleModalLabel" class="modal fade" id="editModal" role="dialog"
+<div aria-hidden="true" aria-labelledby="editModal" class="modal fade" id="editModal" role="dialog"
      tabindex="-1">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="updateModalLabel">Update Country</h5>
+				<h5 class="modal-title" id="editModalTitle">Update Country</h5>
 				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -146,41 +147,107 @@
 			<div class="modal-body">
 				<form method="put" th:action="@{/countries/update}">
 					<div class="form-group">
-						<label class="col-form-label" for="recipient-name">Description:</label>
+						<label class="col-form-label" for="idEdit">Id:</label>
 						<input class="form-control" id="idEdit" name="id" readonly type="text">
 					</div>
 
 					<div class="form-group">
-						<label class="col-form-label" for="recipient-name">Description:</label>
+						<label class="col-form-label" for="descriptionEdit">Description:</label>
 						<input class="form-control" id="descriptionEdit" name="description" type="text">
 					</div>
 
 					<div class="form-group">
-						<label class="col-form-label" for="recipient-name">Capital:</label>
+						<label class="col-form-label" for="capitalEdit">Capital:</label>
 						<input class="form-control" id="capitalEdit" name="capital" type="text">
 					</div>
 
 					<div class="form-group">
-						<label class="col-form-label" for="recipient-name">Code:</label>
+						<label class="col-form-label" for="codeEdit">Code:</label>
 						<input class="form-control" id="codeEdit" name="code" type="text">
 					</div>
 
 					<div class="form-group">
-						<label class="col-form-label" for="recipient-name">Continent:</label>
+						<label class="col-form-label" for="continentEdit">Continent:</label>
 						<input class="form-control" id="continentEdit" name="continent" type="text">
 					</div>
 
 					<div class="form-group">
-						<label class="col-form-label" for="recipient-name">Nationality:</label>
+						<label class="col-form-label" for="nationalityEdit">Nationality:</label>
 						<input class="form-control" id="nationalityEdit" name="nationality" type="text">
 					</div>
-
 
 					<div class="form-group">
 						<button class="btn btn-primary" type="submit">Submit</button>
 					</div>
 				</form>
 			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div aria-hidden="true" aria-labelledby="detailsModal" class="modal fade" id="detailsModal" role="dialog"
+     tabindex="-1">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="detailsModalTitle">Country Details</h5>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form method="put" th:action="@{/countries/findbyId}">
+					<div class="form-group">
+						<label class="col-form-label" for="idDetails">Id:</label>
+						<input class="form-control" id="idDetails" name="id" readonly type="text">
+					</div>
+
+					<div class="form-group">
+						<label class="col-form-label" for="descriptionDetails">Description:</label>
+						<input class="form-control" id="descriptionDetails" name="description" type="text">
+					</div>
+
+					<div class="form-group">
+						<label class="col-form-label" for="capitalDetails">Capital:</label>
+						<input class="form-control" id="capitalDetails" name="capital" type="text">
+					</div>
+
+					<div class="form-group">
+						<label class="col-form-label" for="codeDetails">Code:</label>
+						<input class="form-control" id="codeDetails" name="code" type="text">
+					</div>
+
+					<div class="form-group">
+						<label class="col-form-label" for="continentEdit">Continent:</label>
+						<input class="form-control" id="continentDetails" name="continent" type="text">
+					</div>
+
+					<div class="form-group">
+						<label class="col-form-label" for="nationalityDetails">Nationality:</label>
+						<input class="form-control" id="nationalityDetails" name="nationality" type="text">
+					</div>
+
+					<div class="form-group">
+						<label class="col-form-label" for="lastModifiedByDetails">lastModifiedBy:</label>
+						<input class="form-control" id="lastModifiedByDetails" name="lastModifiedBy" type="text">
+					</div>
+
+					<div class="form-group">
+						<label class="col-form-label" for="lastModifiedDateDetails">lastModifiedDate:</label>
+						<input class="form-control" id="lastModifiedDateDetails" name="lastModifiedDate" type="text">
+					</div>
+
+					<!--					<div class="form-group">-->
+					<!--						<button class="btn btn-primary" type="submit">Submit</button>-->
+					<!--					</div>-->
+				</form>
+			</div>
+
 			<div class="modal-footer">
 				<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
 			</div>
