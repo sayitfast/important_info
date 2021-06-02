@@ -428,7 +428,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<button class="btn btn-primary" data-target="#addModal" data-toggle="modal" type="button">New
-						Country
+						State
 					</button>
 
 					<table class="table table-striped table-advance table-hover">
@@ -480,7 +480,7 @@
 </section>
 <!-- container section end -->
 
-<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="addModal" role="dialog"
+<div aria-hidden="true" aria-labelledby="ModalLabel" class="modal fade" id="addModal" role="dialog"
      tabindex="-1">
 	<form method="post" th:action="@{/states/addNew}">
 		<div class="modal-dialog modal-lg" role="document">
@@ -510,7 +510,7 @@
 						</select>
 					</div>
 					<div class="form-group">
-						<label class="col-form-label" for="nameAdd">Description:</label>
+						<label class="col-form-label" for="nameAdd">Name:</label>
 						<input class="form-control" id="nameAdd" name="name" required type="text">
 					</div>
 
@@ -568,7 +568,7 @@
 					</div>
 
 					<div class="form-group">
-						<label class="col-form-label" for="nameEdit">Description:</label>
+						<label class="col-form-label" for="nameEdit">Name:</label>
 						<input class="form-control" id="nameEdit" name="name" required type="text">
 					</div>
 
@@ -603,7 +603,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="editModalLabel">State Details</h5>
+					<h5 class="modal-title" id="detailsModalLabel">State Details</h5>
 					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
 						<span aria-hidden="true">&times;</span>
 					</button>

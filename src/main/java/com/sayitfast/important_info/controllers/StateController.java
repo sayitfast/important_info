@@ -20,16 +20,14 @@ public class StateController {
     @Autowired
     private CountryService countryService;
 
-
     @GetMapping("/states")
     public String getStates(Model model) {
         List<State> stateList = stateService.getStates();
-        model.addAttribute("states", stateList);
-
         List<Country> countryList = countryService.getCountries();
+        model.addAttribute("states", stateList);
         model.addAttribute("countries", countryList);
-
-        return "State";
+        model.addAttribute("statesCount", stateList.size());
+        return "state";
     }
 
     @PostMapping("/states/addNew")
@@ -55,6 +53,4 @@ public class StateController {
         stateService.delete(id);
         return "redirect:/states";
     }
-
-
 }
