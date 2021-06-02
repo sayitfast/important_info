@@ -1361,7 +1361,6 @@ var Chart = function (context) {
         }
 
 
-
         //Create an array of all the labels by interpolating the string.
 
         var labels = [];
