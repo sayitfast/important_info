@@ -237,3 +237,31 @@
 2021-06-03 10:52:49.645  INFO 19968 --- [main] c.s.important_info.Important_Info        : Started Important_Info in 4.618 seconds (JVM running for 5.493)
 2021-06-03 10:52:56.538  INFO 19968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-03 10:52:56.544  INFO 19968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-06-03 11:28:12.813  INFO 20571 --- [main] c.s.important_info.Important_Info        : Starting Important_Info on rhetts-Mac-Pro-3.local with PID 20571 (/Users/rhettherring/IdeaProjects/important_info/target/classes started by rhettherring in /Users/rhettherring/IdeaProjects/important_info)
+2021-06-03 11:28:12.817  INFO 20571 --- [main] c.s.important_info.Important_Info        : The following profiles are active: dev
+2021-06-03 11:28:13.509  INFO 20571 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-03 11:28:13.627  INFO 20571 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110ms. Found 21 JPA repository interfaces.
+2021-06-03 11:28:13.923  INFO 20571 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-03 11:28:14.120  INFO 20571 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-03 11:28:14.244  INFO 20571 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1381 ms
+2021-06-03 11:28:16.121  INFO 20571 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-03 11:28:17.205  INFO 20571 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-03 11:28:17.284  INFO 20571 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-03 11:28:17.443  INFO 20571 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-03 11:28:17.446  INFO 20571 --- [main] c.s.important_info.Important_Info        : Started Important_Info in 4.991 seconds (JVM running for 5.96)
+2021-06-03 11:28:20.116  INFO 20571 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-03 11:28:20.122  INFO 20571 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-06-03 11:30:04.343  INFO 20620 --- [main] c.s.important_info.Important_Info        : Starting Important_Info on rhetts-Mac-Pro-3.local with PID 20620 (/Users/rhettherring/IdeaProjects/important_info/target/classes started by rhettherring in /Users/rhettherring/IdeaProjects/important_info)
+2021-06-03 11:30:04.345  INFO 20620 --- [main] c.s.important_info.Important_Info        : The following profiles are active: dev
+2021-06-03 11:30:05.028  INFO 20620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-03 11:30:05.212  INFO 20620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 175ms. Found 21 JPA repository interfaces.
+2021-06-03 11:30:05.525  INFO 20620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-03 11:30:05.723  INFO 20620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-03 11:30:05.844  INFO 20620 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1450 ms
+2021-06-03 11:30:07.709  INFO 20620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-03 11:30:08.917  INFO 20620 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-03 11:30:09.003  INFO 20620 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-03 11:30:09.178  INFO 20620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-03 11:30:09.181  INFO 20620 --- [main] c.s.important_info.Important_Info        : Started Important_Info in 5.148 seconds (JVM running for 5.828)
+2021-06-03 11:30:11.396  INFO 20620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-03 11:30:11.403  INFO 20620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
