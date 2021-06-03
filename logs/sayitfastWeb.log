@@ -209,3 +209,33 @@
 2021-06-02 18:13:49.912  INFO 7037 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-06-02 18:13:49.914  INFO 7037 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-06-02 18:13:49.918  INFO 7037 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-02 19:09:06.939  INFO 9809 --- [main] c.s.important_info.Important_Info        : Starting Important_Info on rhetts-Mac-Pro-3.local with PID 9809 (/Users/rhettherring/IdeaProjects/important_info/target/classes started by rhettherring in /Users/rhettherring/IdeaProjects/important_info)
+2021-06-02 19:09:06.942  INFO 9809 --- [main] c.s.important_info.Important_Info        : The following profiles are active: dev
+2021-06-02 19:09:08.115  INFO 9809 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-02 19:09:08.238  INFO 9809 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113ms. Found 21 JPA repository interfaces.
+2021-06-02 19:09:08.511  INFO 9809 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-02 19:09:08.726  INFO 9809 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-02 19:09:08.736  INFO 9809 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-02 19:09:08.736  INFO 9809 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-06-02 19:09:08.848  INFO 9809 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-02 19:09:08.848  INFO 9809 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1855 ms
+2021-06-02 19:09:09.023  INFO 9809 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-02 19:09:09.073  INFO 9809 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2021-06-02 19:09:09.204  INFO 9809 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-06-02 19:09:09.312  INFO 9809 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-02 19:09:09.381  INFO 9809 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-02 19:09:09.392  INFO 9809 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-06-02 19:09:10.739  INFO 9809 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-02 19:09:10.745  INFO 9809 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-02 19:09:11.835  INFO 9809 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f4d2294, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bfdaa7a, org.springframework.security.web.header.HeaderWriterFilter@4e85dcb2, org.springframework.security.web.authentication.logout.LogoutFilter@7ecb9e17, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@311d28f5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@149b53fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fbbd90c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22361e23, org.springframework.security.web.session.SessionManagementFilter@73dbe25, org.springframework.security.web.access.ExceptionTranslationFilter@1a139347, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20f63ddc]
+2021-06-02 19:09:12.000  INFO 9809 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-02 19:09:12.083  INFO 9809 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-02 19:09:12.355  INFO 9809 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-02 19:09:12.357  INFO 9809 --- [main] c.s.important_info.Important_Info        : Started Important_Info in 5.813 seconds (JVM running for 6.958)
+2021-06-02 19:09:16.728  INFO 9809 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-02 19:09:16.728  INFO 9809 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-02 19:09:16.735  INFO 9809 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-06-02 19:09:28.955  INFO 9809 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-02 19:09:28.962  INFO 9809 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-02 19:09:28.963  INFO 9809 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-02 19:09:28.965  INFO 9809 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
