@@ -205,3 +205,7 @@
 2021-06-02 17:21:40.641  INFO 7037 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-02 17:21:40.649  INFO 7037 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
 2021-06-02 17:21:57.977  WARN 7037 --- [http-nio-8080-exec-9] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [country] property of the [com.sayitfast.important_info.models.State] entity was modified, but it won't be updated because the property is immutable.
+2021-06-02 18:13:49.905  INFO 7037 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-02 18:13:49.912  INFO 7037 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-02 18:13:49.914  INFO 7037 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-02 18:13:49.918  INFO 7037 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
