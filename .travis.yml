@@ -14,7 +14,8 @@ before_install:
 notifications:
   email: sayitfast@gmail.com
 
-script: mvn clean verify
+    - ./mvnw clean install
+    - bash <(curl -s https://codecov.io/bash)
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
