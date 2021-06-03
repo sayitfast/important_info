@@ -1,8 +1,15 @@
 # Cobertura is not supported in JDK11 so you must downgrade the JDK that Travis uses if you want to use Cobertura with Travis.
 # See https://github.com/cobertura/cobertura/issues/381
 language: java
-dist: xenial
-jdk: openjdk8
+sudo: true
+dist: trusty
+jdk: oraclejdk9
+addons:
+  apt:
+    packages:
+      - oracle-java9-installer
+before_install:
+  - chmod +x mvnw
 
 notifications:
   email: sayitfast@gmail.com
