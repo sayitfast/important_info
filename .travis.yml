@@ -8,7 +8,7 @@ jdk:
 notifications:
   email: sayitfast@gmail.com
 
-script: ./clean install
+script: mvn clean verify
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
