@@ -4,8 +4,11 @@ language: java
 # See https://github.com/cobertura/cobertura/issues/381
 jdk:
   - openjdk8
+  -
+notifications:
+  email: sayitfast@gmail.com
 
-script: "mvn cobertura:cobertura"
+script: ./clean install
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
