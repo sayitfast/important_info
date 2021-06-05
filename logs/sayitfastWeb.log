@@ -1753,3 +1753,33 @@ Caused by: org.hibernate.AnnotationException: Property com.sayitfast.important_i
 2021-06-05 15:56:53.830  INFO 55983 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-06-05 15:56:53.832  INFO 55983 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-06-05 15:56:53.834  INFO 55983 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-05 16:23:44.883  INFO 56520 --- [main] c.s.important_info.Important_Info        : Starting Important_Info on rhetts-Mac-Pro-3.local with PID 56520 (/Users/rhettherring/IdeaProjects/important_info/target/classes started by rhettherring in /Users/rhettherring/IdeaProjects/important_info)
+2021-06-05 16:23:45.220  INFO 56520 --- [main] c.s.important_info.Important_Info        : The following profiles are active: dev
+2021-06-05 16:23:45.995  INFO 56520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-05 16:23:46.107  INFO 56520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 21 JPA repository interfaces.
+2021-06-05 16:23:46.357  INFO 56520 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-05 16:23:46.541  INFO 56520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-05 16:23:46.548  INFO 56520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-05 16:23:46.548  INFO 56520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-06-05 16:23:46.662  INFO 56520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-05 16:23:46.662  INFO 56520 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1399 ms
+2021-06-05 16:23:46.815  INFO 56520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-05 16:23:46.861  INFO 56520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2021-06-05 16:23:46.979  INFO 56520 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-06-05 16:23:47.052  INFO 56520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-05 16:23:47.107  INFO 56520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-05 16:23:47.118  INFO 56520 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-06-05 16:23:48.421  INFO 56520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-05 16:23:48.427  INFO 56520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-05 16:23:49.293  INFO 56520 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36d7a68a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e7cd0df, org.springframework.security.web.header.HeaderWriterFilter@6a543e09, org.springframework.security.web.authentication.logout.LogoutFilter@2db461b5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b339a08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8b89b3a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74431832, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42dd7d82, org.springframework.security.web.session.SessionManagementFilter@1fc3df43, org.springframework.security.web.access.ExceptionTranslationFilter@43fe2008, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45eacb70]
+2021-06-05 16:23:49.421  INFO 56520 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 16:23:49.491  INFO 56520 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-05 16:23:49.639  INFO 56520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 16:23:49.642  INFO 56520 --- [main] c.s.important_info.Important_Info        : Started Important_Info in 5.278 seconds (JVM running for 6.251)
+2021-06-05 16:24:02.273  INFO 56520 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 16:24:02.344  INFO 56520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-05 16:24:02.357  INFO 56520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-06-05 16:24:43.724  INFO 56520 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-05 16:24:43.731  INFO 56520 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-05 16:24:43.732  INFO 56520 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-05 16:24:43.734  INFO 56520 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

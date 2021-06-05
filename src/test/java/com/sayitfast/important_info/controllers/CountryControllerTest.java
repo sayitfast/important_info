@@ -82,6 +82,20 @@ public class CountryControllerTest {
     }
 
     @Test
+    public void testAddNew() throws Exception {
+        doNothing().when(this.countryService).save((com.sayitfast.important_info.models.Country) any());
+        MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.post("/countries/addNew");
+        MockMvcBuilders.standaloneSetup(this.countryController)
+                .build()
+                .perform(requestBuilder)
+                .andExpect(MockMvcResultMatchers.status().isFound())
+                .andExpect(MockMvcResultMatchers.model().size(1))
+                .andExpect(MockMvcResultMatchers.model().attributeExists("country"))
+                .andExpect(MockMvcResultMatchers.view().name("redirect:/countries"))
+                .andExpect(MockMvcResultMatchers.redirectedUrl("/countries"));
+    }
+
+    @Test
     public void testDelete() throws Exception {
         doNothing().when(this.countryService).delete((Integer) any());
         MockHttpServletRequestBuilder deleteResult = MockMvcRequestBuilders.delete("/countries/delete");
