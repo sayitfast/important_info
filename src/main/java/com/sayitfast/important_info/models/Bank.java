@@ -22,16 +22,22 @@ public class Bank {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(name = "Bank_Name")
+    private String bankName;
     @Column(name = "User_Name")
-    private String name;
+    private String userName;
     @Column(name = "Password")
     private String password;
     @Column(name = "Email")
     private String email;
     @Column(name = "Login_URL")
     private String Login_URL;
-    @Column(name = "Savings")
-    private Boolean savings;
+    @Column(name = "isChecking_Account")
+    private Boolean isCheckingAccount;
+    @Column(name = "isSavings")
+    private Boolean isSavings;
+    @Column(name = "isInvestment_Account")
+    private Boolean isInvestmentAccount;
     @Column(name = "Savings_Account_Number")
     private String savingsAccountNumber;
     @Column(name = "Checking_Account_Number")
@@ -39,8 +45,6 @@ public class Bank {
     @Column(name = "Investment_Account_Number")
     private String investmentAccountNumber;
     @Column(name = "Notes")
-    private Boolean investmentAccount;
-    @Column(name = "Investment_Account")
     private String Notes;
 
 }

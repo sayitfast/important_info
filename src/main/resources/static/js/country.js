@@ -38,6 +38,8 @@ $('document').ready(function () {
             $('#nationalityDetails').val(country.nationality);
             $('#lastModifiedByDetails').val(country.lastModifiedBy);
             $('#lastModifiedDateDetails').val(country.lastModifiedDate.substr(0, 19).replace("T", " "));
+            $('#createdByDetails').val(country.createdBy);
+            $('#createdDateDetails').val(country.createdDate.substr(0, 19).replace("T", " "));
         });
         $('#detailsModal').modal();
     });
