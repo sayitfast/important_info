@@ -26,5 +26,9 @@ public class ApplicationController {
         return "register";
     }
 
+//    @GetMapping("/")
+//    String index(Principal principal) {
+//        return principal != null ? "home/homeSignedIn" : "home/homeNotSignedIn";
+//    }
 
 }

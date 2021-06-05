@@ -30,11 +30,6 @@ public class BankController {
         return "bank";
     }
 
-//    @RequestMapping("/banks")
-//    public String goHome() {
-//        return "bank";
-//    }
-
     @PostMapping("/banks/addNew")
     public String addNew(Bank bank) {
         bankService.save(bank);
