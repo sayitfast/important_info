@@ -51,7 +51,7 @@ public class CountryControllerTest {
     public void testFindById() throws Exception {
         Country country = new Country();
         country.setContinent("Continent");
-        country.setLastModifiedBy("Blah");
+        country.setLastModifiedBy("blah");
         country.setStates(new ArrayList<State>());
         LocalDateTime atStartOfDayResult = LocalDate.of(1970, 1, 1).atStartOfDay();
         country.setCreatedDate(Date.from(atStartOfDayResult.atZone(ZoneId.systemDefault()).toInstant()));
@@ -75,7 +75,7 @@ public class CountryControllerTest {
                 .andExpect(MockMvcResultMatchers.content().contentType("application/json"))
                 .andExpect(MockMvcResultMatchers.content()
                         .string(Matchers.containsString(
-                                "{\"id\":1,\"createdBy\":\"Jan 1, 2020 8:00am GMT+0100\",\"createdDate\":25200000,\"lastModifiedBy\":\"Blah\",\"lastModifiedDate\":25200000,\"description\":\"The characteristics of someone or"
+                                "{\"id\":1,\"createdBy\":\"Jan 1, 2020 8:00am GMT+0100\",\"createdDate\":25200000,\"lastModifiedBy\":\"blah\",\"lastModifiedDate\":25200000,\"description\":\"The characteristics of someone or"
                                         + " something\",\"details\":\"Details\",\"code\":\"Code\",\"capital\":\"Capital\",\"nationality\":\"Nationality\",\"continent"
                                         + "\":\"Continent\",\"states\":[]}")));
     }
