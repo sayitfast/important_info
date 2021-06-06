@@ -6,7 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
 
 /**
  * Created by IntelliJ IDEA. User: Rhett Herring 5/26/21 1:39 PM
@@ -17,11 +18,8 @@ import javax.persistence.*;
 @AllArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 
-public class Bank {
+public class Bank extends CommonObject {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
     @Column(name = "Bank_Name")
     private String bankName;
     @Column(name = "User_Name")
@@ -31,12 +29,12 @@ public class Bank {
     @Column(name = "Email")
     private String email;
     @Column(name = "Login_URL")
-    private String Login_URL;
-    @Column(name = "isChecking_Account")
+    private String login_URL;
+    @Column(name = "is_Checking_Account")
     private Boolean isCheckingAccount;
-    @Column(name = "isSavings")
+    @Column(name = "is_Savings")
     private Boolean isSavings;
-    @Column(name = "isInvestment_Account")
+    @Column(name = "is_Investment_Account")
     private Boolean isInvestmentAccount;
     @Column(name = "Savings_Account_Number")
     private String savingsAccountNumber;

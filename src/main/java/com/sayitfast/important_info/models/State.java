@@ -13,7 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class State {
+public class State extends CommonObject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
