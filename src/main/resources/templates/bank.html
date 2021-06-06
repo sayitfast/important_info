@@ -41,7 +41,7 @@
 					<table class="table table-striped table-advance table-hover">
 						<thead>
 						<tr>
-							<th><i class="icon_table"></i> id</th>
+<!--							<th><i class="icon_table"></i> id</th>-->
 							<th><i class="icon_table"></i> Name</th>
 							<th><i class="icon_table"></i> User Name</th>
 							<th><i class="icon_table"></i> Password</th>
@@ -50,7 +50,7 @@
 						</thead>
 						<tbody>
 						<tr th:each="bank:${banks}">
-							<td th:text="${bank.id}"></td>
+							<!--							<td th:text="${bank.id}"></td>-->
 							<td th:text="${bank.bankName}"></td>
 							<td th:text="${bank.userName}"></td>
 							<td th:text="${bank.password}"></td>
@@ -149,10 +149,10 @@
 			</div>
 			<div class="modal-body">
 				<form method="put" th:action="@{/banks/update}">
-					<div class="form-group">
-						<label class="col-form-label" for="idEdit">Id:</label>
-						<input class="form-control" id="idEdit" name="id" readonly type="text">
-					</div>
+					<!--					<div class="form-group">-->
+					<!--						<label class="col-form-label" for="idEdit">Id:</label>-->
+					<!--						<input class="form-control" id="idEdit" name="id" readonly type="text">-->
+					<!--					</div>-->
 
 					<div class="form-group">
 						<label class="col-form-label" for="nameEdit">Name:</label>
@@ -160,23 +160,23 @@
 					</div>
 
 					<div class="form-group">
-						<label class="col-form-label" for="capitalEdit">Capital:</label>
-						<input class="form-control" id="capitalEdit" name="capital" type="text">
+						<label class="col-form-label" for="userNameEdit">User Name:</label>
+						<input class="form-control" id="userNameEdit" name="userName" type="text">
 					</div>
 
 					<div class="form-group">
-						<label class="col-form-label" for="codeEdit">Code:</label>
-						<input class="form-control" id="codeEdit" name="code" type="text">
+						<label class="col-form-label" for="passwordEdit">Password:</label>
+						<input class="form-control" id="passwordEdit" name="password" type="text">
 					</div>
 
 					<div class="form-group">
-						<label class="col-form-label" for="continentEdit">Continent:</label>
-						<input class="form-control" id="continentEdit" name="continent" type="text">
+						<label class="col-form-label" for="emailEdit">Email:</label>
+						<input class="form-control" id="emailEdit" name="email" type="text">
 					</div>
 
 					<div class="form-group">
-						<label class="col-form-label" for="nationalityEdit">Nationality:</label>
-						<input class="form-control" id="nationalityEdit" name="nationality" type="text">
+						<label class="col-form-label" for="login_URLEdit">Login URL:</label>
+						<input class="form-control" id="login_URLEdit" name="loginURL" type="text">
 					</div>
 
 					<div class="form-group">

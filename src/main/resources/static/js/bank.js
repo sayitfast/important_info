@@ -6,7 +6,7 @@ $('document').ready(function () {
         var href = $(this).attr('href');  // == /countries/findbyId/?id=1  url and id of the clicked button
 
         $.get(href, function (bank, status) {
-            $('#idEdit').val(bank.id);
+            //$('#idEdit').val(bank.id);
             $('#nameEdit').val(bank.bankName);
             $('#userNameEdit').val(bank.userName);
             $('#passwordEdit').val(bank.password);
