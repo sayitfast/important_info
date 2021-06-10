@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.validation.constraints.NotBlank;
 
 /**
  * Created by IntelliJ IDEA. User: Rhett Herring 5/26/21 1:39 PM
@@ -21,6 +22,7 @@ import javax.persistence.Entity;
 public class Bank extends CommonObject {
 
     @Column(name = "Bank_Name")
+    @NotBlank(message = "Bank name is mandatory")
     private String bankName;
     @Column(name = "User_Name")
     private String userName;

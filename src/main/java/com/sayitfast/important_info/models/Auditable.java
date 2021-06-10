@@ -13,11 +13,9 @@ import java.util.Date;
 
 import static javax.persistence.TemporalType.TIMESTAMP;
 
-
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public abstract class Auditable<U> {
-
 
     @CreatedBy
     protected U createdBy;
@@ -64,6 +62,4 @@ public abstract class Auditable<U> {
     public void setLastModifiedDate(Date lastModifiedDate) {
         this.lastModifiedDate = lastModifiedDate;
     }
-
-
 }
